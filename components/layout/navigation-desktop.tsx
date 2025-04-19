@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
+import { Icons } from '@/components/icons';
+import { NavigationLink } from '@/components/layout/navigation-link';
+import { ThemeToggle } from '@/components/theme/theme-toggle';
+import { buttonVariants } from '@/components/ui/button';
+
 import { cn } from '@/lib/utils';
 
 import { siteConfig } from '@/config/site';
-
-import { Icons } from '../icons';
-import { ThemeToggle } from '../theme/theme-toggle';
-import { buttonVariants } from '../ui/button';
-import { NavigationLink } from './navigation-link';
 
 export function NavigationDesktop() {
   return (
@@ -16,7 +16,7 @@ export function NavigationDesktop() {
     >
       <ul className={cn('flex items-center gap-2')}>
         <li>
-          <NavigationLink href="/">Hooks</NavigationLink>
+          <NavigationLink href="/hooks">Hooks</NavigationLink>
         </li>
       </ul>
       <div className={cn('flex items-center gap-2 border-l pl-4')}>

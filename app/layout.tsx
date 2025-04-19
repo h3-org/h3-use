@@ -68,7 +68,7 @@ export default function RootLayout({
               className={cn(
                 'z-10 flex flex-col grow',
                 'size-full max-w-5xl backdrop-blur-xs',
-                'mx-auto p-8 mt-8 lg:mt-12 mb-8 border rounded-md',
+                'mx-auto p-8 mt-8 lg:mt-12 mb-8',
               )}
             >
               {children}

@@ -22,8 +22,8 @@ export function NavigationLink({ href, children }: NavigationLinkProps) {
       href={href}
       className={cn(
         buttonVariants({ variant: 'link' }),
-        'font-light',
-        isActive && 'font-medium',
+        'text-muted-foreground',
+        isActive && 'text-foreground',
       )}
     >
       {children}
